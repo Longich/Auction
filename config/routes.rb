@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  get '/items' => 'items#index'
-  post '/items' => 'items#create'
-  get '/items/new' => 'items#new'
-  get '/items/:id' => 'items#show'
-  get '/items/:id/edit' => 'items#edit'
-  post '/items/:id' => 'items#update'
-  delete 'items/:id' => 'items#delete'
+  # get '/items' => 'items#index'
+  # post '/items' => 'items#create'
+  # get '/items/new' => 'items#new'
+  # get '/items/:id' => 'items#show'
+  # get '/items/:id/edit' => 'items#edit'
+  # post '/items/:id' => 'items#update'
+  # delete 'items/:id' => 'items#delete'
+  resources :items
   get 'items/sellerinfo/:id' => 'sellerinfo#info'
 
   # The priority is based upon order of creation: first created -> highest priority.
