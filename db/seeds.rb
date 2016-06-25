@@ -27,6 +27,21 @@ item3 = Item.new(
 
 item3.save
 
+Sellerinfo.create(
+  id: 746,
+  name: "高橋一真",
+  address: "八幡平",
+  tel: "0120117117",
+  )
+
+Sellerinfo.create(
+  id: 32,
+  name: "田中太郎",
+  address: "盛岡",
+  tel: "0120001001",
+  )
+
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
