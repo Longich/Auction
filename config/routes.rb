@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/items/:id/edit' => 'items#edit'
   post '/items/:id' => 'items#update'
   delete 'items/:id' => 'items#delete'
+  get 'items/sellerinfo/:id' => 'sellerinfo#info'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
